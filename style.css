@@ -64,7 +64,7 @@ body {
         border-radius: 1em;
         box-shadow: 8px 8px 20px black;
         bottom: 20px;
-        left: 12px;
+        left: 0.8em;
         position: fixed;
         margin: auto;
         background-color: var(--cor-secundaria);
