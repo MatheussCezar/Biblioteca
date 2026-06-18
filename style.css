@@ -1,5 +1,5 @@
 :root {
-    --cor-primaria: #F4F6F9;
+    --cor-primaria: #e4e4e4;
     --cor-secundaria: black;
 } 
 
@@ -19,7 +19,7 @@ body {
     justify-content: space-around;
 }
 
-@media (max-width: 520px) {
+@media (min-width: 481px) and (max-width: 768px){
 
     #top {
         width: 27em;
@@ -34,7 +34,7 @@ body {
         height: 9em;
         border-radius: 1em;
         background-color: var(--cor-secundaria);
-        box-shadow: 8px 8px 20px black;     
+        box-shadow: 8px 8px 20px rgb(72,72,74);     
     }
 
     #logo-escola {
@@ -50,7 +50,7 @@ body {
         background-color: var(--cor-secundaria);
         margin: 1em auto;
         padding: 1em;
-        box-shadow: 8px 8px 20px black; 
+        box-shadow: 8px 8px 20px rgb(72,72,74); 
     }
 
     .campo-de-dados {
@@ -64,7 +64,9 @@ body {
         box-shadow: 8px 8px 20px black;
         bottom: 0px;
         position: fixed;
+        border-radius: 5px 5px 0 0;
         margin: auto;
+        box-shadow: 0px -8px 15px rgb(72,72,74);
         background-color: var(--cor-secundaria);
     }
 }
