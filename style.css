@@ -1,0 +1,49 @@
+:root {
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: black;
+} 
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--cor-primaria);
+}
+
+@media (max-width: 480px) {
+
+    #top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    #foto-perfil {
+        width: 9em;
+        height: 9em;
+        border-radius: 1em;
+        background-color: var(--cor-secundaria);
+    }
+
+    #logo-escola {
+        width: 9em;
+        height: 9em;
+        border-radius: 1em;
+        background-color: var(--cor-secundaria);
+    }
+
+    #dados {
+        width: 27em;
+        height: 13em;
+        border-radius: 1em;
+        background-color: var(--cor-secundaria);
+        margin: auto;
+    }
+}
+  
