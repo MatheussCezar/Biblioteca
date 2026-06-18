@@ -1,8 +1,7 @@
 :root {
-    --cor-primaria: #FFFFFF;
+    --cor-primaria: #F4F6F9;
     --cor-secundaria: black;
 } 
-
 
 * {
     padding: 0;
@@ -13,15 +12,18 @@
 
 body {
     background-color: var(--cor-primaria);
+    font-family: "Montserrat";
+    font-weight: 350;
 }
 
 @media (max-width: 480px) {
 
     #top {
+        width: 27em;
+        margin: 1em auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 1em;
     }
 
     #foto-perfil {
@@ -29,21 +31,38 @@ body {
         height: 9em;
         border-radius: 1em;
         background-color: var(--cor-secundaria);
+        box-shadow: 8px 8px 20px black;     
     }
 
     #logo-escola {
         width: 9em;
         height: 9em;
         border-radius: 1em;
-        background-color: var(--cor-secundaria);
     }
 
     #dados {
         width: 27em;
-        height: 13em;
+        height: 9em;
         border-radius: 1em;
         background-color: var(--cor-secundaria);
+        margin: 1em auto;
+        padding: 1em;
+        box-shadow: 8px 8px 20px black; 
+    }
+
+    .campo-de-dados {
+        color: var(--cor-primaria);
+        font-size: 1.5em;
+    }
+
+    #menu-de-seleção {
+        width: 27em;
+        height: 5em;
+        border-radius: 1em;
+        box-shadow: 8px 8px 20px black;  
         margin: auto;
+        justify-content: baseline;
+        background-color: var(--cor-secundaria);
     }
 }
   
