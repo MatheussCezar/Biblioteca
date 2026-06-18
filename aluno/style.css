@@ -19,7 +19,7 @@ body {
     justify-content: space-around;
 }
 
-@media (min-width: 400px){
+@media (max-width: 768px){
 
     #top {
         width: 27em;
