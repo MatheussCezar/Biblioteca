@@ -23,7 +23,7 @@ body {
 
     #top {
         width: 95%;
-        margin: 1em auto;
+        margin: 1em 2.5%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -47,7 +47,7 @@ body {
         width: 95%;
         border-radius: 1em;
         background-color: var(--cor-secundaria);
-        margin: 1em auto;
+        margin: 1em 2.5%;
         padding: 1em;
         box-shadow: 8px 8px 20px rgb(72,72,74);
     }
@@ -60,7 +60,7 @@ body {
 
     #menu-de-seleção {
         width: 100%;
-        height: 5em;
+        height: 12%;
         bottom: 0px;
         position: fixed;
         border-radius: 5px 5px 0 0;
