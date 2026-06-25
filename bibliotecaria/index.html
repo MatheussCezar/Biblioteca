@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeminskiLib</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="menu-lateral">
+
+        <div id="logo-titulo">
+            <img class="logo" src="LogoPL.jpeg.png" alt="Logo">
+            <h2>LeminskiLib</h2>
+        </div>
+
+        <a href="#" onclick="mostrarPagina('inicio', this)" class="active">
+            Início
+        </a>
+
+        <a href="#" onclick="mostrarPagina('emprestimos', this)">
+            Empréstimos
+        </a>
+
+        <a href="#" onclick="mostrarPagina('acervo', this)">
+            Acervo
+        </a>
+
+        <a href="#" onclick="mostrarPagina('usuarios', this)">
+            Usuários
+        </a>
+
+        <a href="#" class="sair-btn">
+            Sair
+        </a>
+
+    </div>
+
+    <main class="content">
+
+        <section id="inicio" class="pagina ativa">
+
+            <header>
+                <h1>Início</h1>
+                <p>Acesso Restrito à Bibliotecária</p>
+            </header>
+
+            <div class="cards">
+
+                <div class="info-card">
+                    <h3>Livros</h3>
+                    <p>67.6767</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Empréstimos</h3>
+                    <p>6767</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Usuários</h3>
+                    <p>6767</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="emprestimos" class="pagina">
+
+            <header>
+                <h1>Empréstimos</h1>
+                <p>Gerencie os empréstimos da biblioteca</p>
+            </header>
+
+            <div class="card">
+                <h2>Lista de Empréstimos</h2>
+                <br>
+                <p>Nenhum empréstimo cadastrado.</p>
+            </div>
+
+        </section>
+
+        <section id="acervo" class="pagina">
+
+            <header>
+                <input type="text" placeholder=" Pesquisar livro...">
+                <h1>Acervo</h1>
+                <p>Gerencie os livros disponíveis</p>
+            </header>
+
+            <div class="card">
+                <h2>Livros Cadastrados</h2>
+                <br>
+                <p>Adicione ou edite livros do acervo.</p>
+            </div>
+
+        </section>
+
+        <section id="usuarios" class="pagina">
+
+            <header>
+                <h1>Usuários</h1>
+                <p>Gerenciamento de leitores</p>
+            </header>
+
+            <div class="card">
+                <h2>Usuários Cadastrados</h2>
+                <br>
+                <p>Lista de leitores da biblioteca.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        function mostrarPagina(id, elemento) {
+
+            document.querySelectorAll(".pagina").forEach(secao => {
+                secao.classList.remove("ativa");
+            });
+
+            document.getElementById(id).classList.add("ativa");
+
+            document.querySelectorAll(".menu-lateral a").forEach(link => {
+                link.classList.remove("active");
+            });
+
+            elemento.classList.add("active");
+        }
+
+    </script>
+
+</body>
+
+</html>
