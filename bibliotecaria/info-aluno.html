@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Info-aluno</title>
+</head>
+
+<body>
+    <div class="menu-lateral">
+
+        <div id="logo-titulo">
+            <img class="logo" src="LogoPL.jpeg.png" alt="Logo">
+            <h2>Usuário</h2>
+        </div>
+
+        <a href="#" onclick="mostrarPagina('dados-do-aluno', this)" class="active">Informações</a>
+        <a href="#" onclick="mostrarPagina('emprestimos-dados-aluno', this)" class="active">emprestimos</a>
+    </div>
+    <main class="content">
+
+        <section id="dados-do-aluno" class="pagina ativa">
+
+            <header id="card-dados-aluno">
+                <img src="LogoPL.jpeg.png" alt="" id="foto-perfil">
+                <div>
+                    <h1 id="nome-aluno-pagina-usuarios">Bruno Santos Simião</h1>
+                    <p id="turma-aluno-pagina-usuarios">3N</p>
+                    <button id="realizar emprestimos" onclick="mostrarJanelaEmprestimo()">Realizar Emprestimo</button>
+                </div>
+            </header>
+
+
+        </section>
+        <section id="emprestimos-dados-aluno">
+
+        </section>
+    </main>
+
+    <script>
+
+        function mostrarPagina(id, elemento) {
+
+            document.querySelectorAll(".pagina").forEach(secao => {
+                secao.classList.remove("ativa");
+            });
+
+            document.getElementById(id).classList.add("ativa");
+
+            document.querySelectorAll(".menu-lateral a").forEach(link => {
+                link.classList.remove("active");
+            });
+
+            elemento.classList.add("active");
+        }
+
+    </script>
+</body>
+
+</html>
