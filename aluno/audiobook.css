@@ -58,7 +58,7 @@ body {
         margin: 10px auto;
         display:flex;
         align-items:center;
-        gap:10px;
+        gap:0.3em;
         background: var(--cor-primaria);
         padding:20px;
         border-radius:10px;
@@ -69,6 +69,10 @@ body {
         border: none;
         font-size: 1.5em;
         padding: 0.1em;
+    }
+
+    .fa-solid {
+        color: var(--cor-secundaria);
     }
 
     input[type="range"]{
@@ -86,9 +90,19 @@ body {
         background-color: var(--cor-primaria);
         display: flex;
         justify-content: space-around;
-
-        /*Temporário*/
+        font-size: 2em;
         text-align: center;
-        color: white;
+    }
+
+    #menu-de-seleção a {
+        padding-top: 0.5em;
+        width: 20%;
+    }
+
+    #menu-de-seleção p {
+        padding-top: 0.5em;
+        width: 20%;
+        background: #515455;
+        background: linear-gradient(180deg, rgba(81, 84, 85, 1) 0%, rgba(62, 64, 66, 1) 70%);
     }
 }

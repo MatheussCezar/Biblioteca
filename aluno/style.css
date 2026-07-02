@@ -61,6 +61,10 @@ body {
         display: flex;
     }
 
+    .fa-solid {
+        color: var(--cor-secundaria);
+    }
+
     #menu-de-seleção {
         width: 100%;
         height: 12%;
@@ -71,9 +75,21 @@ body {
         background-color: var(--cor-primaria);
         display: flex;
         justify-content: space-around;
-
-        /*Temporário*/
+        font-size: 2em;
         text-align: center;
-        color: white;
+        color: var(--cor-secundaria);
+        color: inherit;
+    }
+
+    #menu-de-seleção a {
+        padding-top: 0.5em;
+        width: 20%;
+    }
+
+    #menu-de-seleção p {
+        padding-top: 0.5em;
+        width: 20%;
+        background: #515455;
+        background: linear-gradient(180deg, rgba(81, 84, 85, 1) 0%, rgba(62, 64, 66, 1) 70%);
     }
 }
