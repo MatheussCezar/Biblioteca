@@ -1,6 +1,6 @@
 :root {
-    --cor-primaria: #3e4042;
-    --cor-secundaria: #191d24;
+    --cor-primaria:  #3e4042;
+    --cor-secundaria:#191d24;
     --cor-destaque: #ffffff;
     --cor-hover: rgba(255, 255, 255, 0.15);
     --sombra: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: var(--cor-destaque);
     font-family: "Montserrat";
@@ -20,49 +19,65 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: var(--cor-destaque);
 }
 
-@media (max-width: 768px) {
-
-    #top {
-        width: 95%;
-        margin: 1em 2.5%;
+@media (max-width: 798px){
+    #dados-livro {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #foto-perfil {
-        width: 9em;
-        height: 9em;
-        border-radius: 1em;
-        background-color: var(--cor-primaria);
-        box-shadow: var(--sombra);
-    }
-
-    #logo-escola {
-        width: 8em;
-        height: 8em;
-        border-radius: 1em;
-    }
-
-    #dados {
         width: 95%;
-        border-radius: 1em;
-        background-color: var(--cor-primaria);
-        margin: 1em 2.5%;
-        padding: 1em;
-        backdrop-filter: blur(10px);
+        margin: 10px auto;
     }
 
-    .campo-de-dados {
-        color: var(--cor-destaque);
+    #capa-livro {
+        width: 150px;
+        height: 200px;
+        background-color: #191d24;
+    }
+
+    #titulo-livro {
+        color: #191d24;
         font-size: 1.5em;
-        display: flex;
+        font-weight: 500;
+    }
+
+    #autor-livro {
+        color: #3e4042;
+    }
+
+    hr {
+        width: 90%;
+        margin: auto;
+        border: 1px solid var(--cor-secundaria); 
+        border-radius: 10px;
+    }
+
+    #audio-player{
+        width: 95%;
+        margin: 10px auto;
+        display:flex;
+        align-items:center;
+        gap:0.3em;
+        background: var(--cor-primaria);
+        padding:20px;
+        border-radius:10px;
+    }
+
+    #audio-player button {
+        background-color: var(--cor-primaria);
+        border: none;
+        font-size: 1.5em;
+        padding: 0.1em;
     }
 
     .fa-solid {
         color: var(--cor-secundaria);
+    }
+
+    input[type="range"]{
+        width:250px;
+        accent-color: var(--cor-secundaria);
     }
 
     #menu-de-seleção {
@@ -77,8 +92,6 @@ body {
         justify-content: space-around;
         font-size: 2em;
         text-align: center;
-        color: var(--cor-secundaria);
-        color: inherit;
     }
 
     #menu-de-seleção a {
