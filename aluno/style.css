@@ -1,6 +1,6 @@
 :root {
-    --cor-primaria:  #3e4042;
-    --cor-secundaria:#191d24;
+    --cor-primaria: #3e4042;
+    --cor-secundaria: #191d24;
     --cor-destaque: #ffffff;
     --cor-hover: rgba(255, 255, 255, 0.15);
     --sombra: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -22,7 +22,7 @@ body {
     justify-content: space-around;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
     #top {
         width: 95%;
@@ -37,12 +37,12 @@ body {
         height: 9em;
         border-radius: 1em;
         background-color: var(--cor-primaria);
-        box-shadow: var(--sombra); 
+        box-shadow: var(--sombra);
     }
 
     #logo-escola {
-        width: 9em;
-        height: 9em;
+        width: 8em;
+        height: 8em;
         border-radius: 1em;
     }
 
@@ -52,7 +52,7 @@ body {
         background-color: var(--cor-primaria);
         margin: 1em 2.5%;
         padding: 1em;
-        box-shadow: var(--sombra);
+        backdrop-filter: blur(10px);
     }
 
     .campo-de-dados {
@@ -77,4 +77,3 @@ body {
         color: white;
     }
 }
-  

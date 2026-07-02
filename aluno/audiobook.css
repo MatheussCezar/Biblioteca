@@ -1,0 +1,94 @@
+:root {
+    --cor-primaria:  #3e4042;
+    --cor-secundaria:#191d24;
+    --cor-destaque: #ffffff;
+    --cor-hover: rgba(255, 255, 255, 0.15);
+    --sombra: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-destaque);
+    font-family: "Montserrat";
+    font-weight: 350;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--cor-destaque);
+}
+
+@media (max-width: 798px){
+    #dados-livro {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    #capa-livro {
+        width: 150px;
+        height: 200px;
+        background-color: #191d24;
+    }
+
+    #titulo-livro {
+        color: #191d24;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    #autor-livro {
+        color: #3e4042;
+    }
+
+    hr {
+        width: 90%;
+        margin: auto;
+        border: 1px solid var(--cor-secundaria); 
+        border-radius: 10px;
+    }
+
+    #audio-player{
+        width: 95%;
+        margin: 10px auto;
+        display:flex;
+        align-items:center;
+        gap:10px;
+        background: var(--cor-primaria);
+        padding:20px;
+        border-radius:10px;
+    }
+
+    #audio-player button {
+        background-color: var(--cor-primaria);
+        border: none;
+        font-size: 1.5em;
+        padding: 0.1em;
+    }
+
+    input[type="range"]{
+        width:250px;
+        accent-color: var(--cor-secundaria);
+    }
+
+    #menu-de-seleção {
+        width: 100%;
+        height: 12%;
+        bottom: 0px;
+        position: fixed;
+        border-radius: 5px 5px 0 0;
+        box-shadow: var(--sombra);
+        background-color: var(--cor-primaria);
+        display: flex;
+        justify-content: space-around;
+
+        /*Temporário*/
+        text-align: center;
+        color: white;
+    }
+}

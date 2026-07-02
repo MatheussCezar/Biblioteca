@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="audiobook.css">
+    <title>Audiobooks</title>
+</head>
+<body>
+    <section id="dados-livro">
+        <img src="images.jpg" alt="" id="capa-livro">
+        <div>
+            <p id="titulo-livro">A noite na taverna</p>
+            <p id="autor-livro">Álvares de Azevedo</p>
+        </div>
+    </section>
+    <hr>
+    <div id="audio-player">
+        <button id="play">▶</button>
+        <button id="pause">⏸</button>
+
+        <input type="range" id="progress" value="0" min="0" max="100">
+
+        <span id="current">0:00</span> /
+        <span id="duration">0:00</span>
+
+        <audio id="audio" src="musica.mp3"></audio>
+    </div>
+    <section id="menu-de-seleção">
+        <a href="index.html">A</a>
+        <a href="index.html">B</a>
+        <p>C</p>
+    </section>
+</body>
+</html>
