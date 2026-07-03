@@ -187,7 +187,7 @@
                 <p>Gerenciamento de leitores</p>
             </header>
 
-            <div class="card-aluno" href="info-aluno.html">
+            <div class="card-aluno" href="info-aluno.html" onclick="abrirPaginaAluno()">
                 <img src="LogoSemfundo.png" alt="">
                 <div>
                     <h2>Bruno Santos Simião</h2>
@@ -196,7 +196,7 @@
 
             </div>
             <div class="card-aluno">
-                <img src="LogoSemfundo.png" alt="">
+                <img src="LogoSemfundo.png" alt="" onclick="abrirPaginaAluno()">
                 <div>
                     <h2>Bruno Santos Simião</h2>
                     <p>3N</p>
@@ -204,7 +204,7 @@
 
             </div>
             <div class="card-aluno">
-                <img src="LogoSemfundo.png" alt="">
+                <img src="LogoSemfundo.png" alt="" onclick="abrirPaginaAluno()">
                 <div>
                     <h2>Bruno Santos Simião</h2>
                     <p>3N</p>
@@ -281,6 +281,10 @@
         setInterval(() => {
             mostrarSlide(index + 1);
         }, 4000);
+
+        function abrirPaginaAluno() {
+            window.open("info-aluno.html", "_self");
+        }
 
     </script>
 

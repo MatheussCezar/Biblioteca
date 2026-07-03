@@ -1,0 +1,117 @@
+:root {
+    --cor-primaria: #3e4042;
+    --cor-secundaria: #191d24;
+    --cor-destaque: #ffffff;
+    --cor-hover: rgba(255, 255, 255, 0.15);
+    --sombra: 0 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+#foto-perfil {
+    width: 100px;
+    height: 100px;
+}
+
+#abrir-modal-emprestimo {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-destaque);
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#abrir-modal-emprestimo:hover {
+    background-color: var(--cor-primaria);
+    cursor: pointer;
+}
+
+#modal-emprestimo {
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque);
+    border-radius: 20px;
+    margin: auto;
+    width: 25%;   
+    flex-direction: column;
+}
+
+#fechar-modal-emprestimo {
+    background-color: var(--cor-primaria);
+    font-size: 30px;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+#realizar-emprestimo-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 50px auto;
+}
+
+#realizar-emprestimo-form div {
+    margin-bottom: 10px;
+}
+
+#realizar-emprestimo {
+    background-color: var(--cor-secundaria);
+    font-size: 20px;
+    color: var(--cor-destaque);
+    border: none;
+    border-radius: 10px;
+    height: 2em;
+}
+
+#realizar-emprestimo:hover {
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-destaque);
+}
+
+#container-dados-aluno {
+    background-color: var(--cor-destaque);
+    box-shadow: var(--sombra);
+}
+
+.organizar-dados-aluno {
+    display: flex;
+}
+
+.organizar-dados-aluno h2 {
+    margin-left: 10px;
+}
+
+hr {
+    margin-top: 20px;
+    border: 2px solid var(--cor-secundaria);
+}
+
+.card-historico-emprestimo {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-historico-emprestimo div {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-historico-emprestimo:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+.dar-baixa {
+    background-color: var(--cor-secundaria);
+    border: none;
+    color: var(--cor-destaque);
+    border-radius: 5px;
+    width: 90px;
+}
+
+.dar-baixa:hover {
+    background-color: #3e4042;
+    cursor: pointer;
+}
