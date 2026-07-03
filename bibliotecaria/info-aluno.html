@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="info-aluno.css">
     <title>Info-aluno</title>
 </head>
 
@@ -17,7 +19,7 @@
         </div>
 
         <a href="#" onclick="mostrarPagina('dados-do-aluno', this)" class="active">Informações</a>
-        <a href="#" onclick="mostrarPagina('emprestimos-dados-aluno', this)" class="active">emprestimos</a>
+        <a href="#" onclick="mostrarPagina('emprestimos-dados-aluno', this)" class="">emprestimos</a>
     </div>
     <main class="content">
 
@@ -28,15 +30,78 @@
                 <div>
                     <h1 id="nome-aluno-pagina-usuarios">Bruno Santos Simião</h1>
                     <p id="turma-aluno-pagina-usuarios">3N</p>
-                    <button id="realizar emprestimos" onclick="mostrarJanelaEmprestimo()">Realizar Emprestimo</button>
+                    <button id="abrir-modal-emprestimo" onclick="mostrarModalEmprestimo()">Realizar Emprestimo</button>
                 </div>
             </header>
 
+            <div class="info-card">
+                <div class="organizar-dados-aluno">
+                    <h2>Email:</h2><h2 id="email-aluno">brunao1234@escola.pr.gov.br</h2>
+                </div>
+                <div class="organizar-dados-aluno">
+                    <h2>CGM:</h2><h2 id="cgm-aluno">908671724</h2>
+                </div>
+            </div>
+
 
         </section>
-        <section id="emprestimos-dados-aluno">
+        <section id="emprestimos-dados-aluno" class="pagina">
+            <header>
+                <h1>Historico de emprestimos</h1>
+                <hr>
+            </header>
 
+            <main>
+                <div class="card-historico-emprestimo info-card">
+                    <div>
+                        <h2>ISBN: </h2> <h2>8276573892018</h2>
+                    </div>
+                    <div>
+                        <h2>Data Emprestimo:</h2><h2>14/06</h2>
+                    </div>
+                    <div>
+                        <h2>Data Devolução:</h2><h2>21/06</h2>
+                    </div>
+                    <div>
+                        <h2>Status:</h2><h2>Ativo</h2>
+                    </div>
+
+                    <button class="dar-baixa">DAR BAIXA</button>
+                </div>
+
+                <div class="card-historico-emprestimo info-card">
+                    <div>
+                        <h2>ISBN: </h2> <h2>0973826573891</h2>
+                    </div>
+                    <div>
+                        <h2>Data Emprestimo:</h2><h2>7/06</h2>
+                    </div>
+                    <div>
+                        <h2>Data Devolução:</h2><h2>14/06</h2>
+                    </div>
+                    <div>
+                        <h2>Status:</h2><h2>Devolvido</h2>
+                    </div>
+                </div>
+            </main>
         </section>
+
+        <dialog id="modal-emprestimo">
+            <button id="fechar-modal-emprestimo" onclick="esconderModalEmprestimo()"><i class="fa-solid fa-close"></i></button>
+            <form action="" id="realizar-emprestimo-form">
+                <div>
+                    <label for="ISBN">ISBN: </label>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <label for="data-devolução">Data de devolução:</label>
+                    <input type="date">
+                </div>
+
+                <button id="realizar-emprestimo">EMPRESTAS</button>
+            </form>
+        </dialog>
     </main>
 
     <script>
@@ -56,6 +121,14 @@
             elemento.classList.add("active");
         }
 
+
+        function mostrarModalEmprestimo() {
+            document.getElementById("modal-emprestimo").showModal();
+        }
+
+        function esconderModalEmprestimo() {
+            document.getElementById("modal-emprestimo").close();
+        }
     </script>
 </body>
 
