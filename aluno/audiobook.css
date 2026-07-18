@@ -34,6 +34,7 @@ body {
         width: 150px;
         height: 200px;
         background-color: #191d24;
+        border-radius: 5px;
     }
 
     #titulo-livro {

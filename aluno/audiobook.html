@@ -10,28 +10,77 @@
 </head>
 <body>
     <section id="dados-livro">
-        <img src="images.jpg" alt="" id="capa-livro">
+        <img src="mancha.jpg" alt="" id="capa-livro">
         <div>
-            <p id="titulo-livro">A noite na taverna</p>
-            <p id="autor-livro">Álvares de Azevedo</p>
+            <p id="titulo-livro">Manchas Verdes</p>
+            <p id="autor-livro">Isaac Asimov</p>
         </div>
     </section>
     <hr>
     <div id="audio-player">
         <button id="play"><i class="fa-solid fa-play"></i></button>
-        <button id="pause"><i class="fa-solid fa-pause"></i></button>
 
         <input type="range" id="progress" value="0" min="0" max="100">
 
         <span id="current">0:00</span> /
         <span id="duration">0:00</span>
 
-        <audio id="audio" src="musica.mp3"></audio>
+        <audio id="audio" src="Manchas_Verdes.mp3"></audio>
     </div>
     <section id="menu-de-seleção">
         <a href="agenda.html"><i class="fa-solid fa-calendar"></i></a>
         <a href="index.html"><i class="fa-solid fa-house"></i></a>
         <p><i class="fa-solid fa-circle-play"></i></p>
     </section>
+
+    <script>
+        const audio = document.getElementById("audio");
+        const playBtn = document.getElementById("play");
+        const progress = document.getElementById("progress");
+        const current = document.getElementById("current");
+        const duration = document.getElementById("duration");
+
+        // Play/Pause
+        playBtn.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                playBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+            } else {
+                audio.pause();
+                playBtn.innerHTML = `<i class="fa-solid fa-play">`;
+            }
+        });
+
+        // Quando o áudio carregar
+        audio.addEventListener("loadedmetadata", () => {
+            progress.max = audio.duration;
+            duration.textContent = formatTime(audio.duration);
+        });
+
+        // Atualiza a barra de progresso
+        audio.addEventListener("timeupdate", () => {
+            progress.value = audio.currentTime;
+            current.textContent = formatTime(audio.currentTime);
+        });
+
+        // Permite mover a música
+        progress.addEventListener("input", () => {
+            audio.currentTime = progress.value;
+        });
+
+        // Quando terminar
+        audio.addEventListener("ended", () => {
+            playBtn.textContent = "▶";
+            progress.value = 0;
+        });
+
+        // Formata tempo
+        function formatTime(seconds) {
+            const min = Math.floor(seconds / 60);
+            const sec = Math.floor(seconds % 60);
+
+            return `${min}:${sec.toString().padStart(2, "0")}`;
+        }
+    </script>
 </body>
 </html>
