@@ -56,7 +56,7 @@
 
                 <div class="info-card" onclick="mostrarPagina('acervo', this)">
                     <h3>Livros</h3>
-                    <p>8</p>
+                    <p>1</p>
                 </div>
 
                 <div class="info-card" onclick="mostrarPagina('emprestimos', this)">
@@ -132,7 +132,7 @@
                     <img src="/aluno/images.jpg" alt="">
                     <h3>Noite na Taverna</h3>
                     <p>Livro por Álvares de Azevedo</p>
-                    <button>Ver detalhes</button>
+                    <button onclick="abrirPaginaLivro()">Ver detalhes</button>
                 </div>
                 <div>
                     <img src="/bibliotecaria/harry1.jpg" alt="">
@@ -270,6 +270,10 @@
 
         function abrirPaginaAluno() {
             window.open("info-aluno.html", "_self");
+        }
+
+        function abrirPaginaLivro() {
+            window.open("info-livro.html", "_self");
         }
 
     </script>

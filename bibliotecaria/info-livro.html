@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="info-livro.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Informações do Livro</title>
+</head>
+
+<body>
+
+    <div class="menu-lateral">
+
+        <div id="logo-titulo">
+            <img class="logo" src="LogoPL.jpeg.png" alt="Logo">
+            <h2>Livros</h2>
+        </div>
+
+        <a class="active">Detalhes</a>
+        <a href="index.html" class="sair-btn">Voltar</a>
+    </div>
+
+    <main class="content">
+
+        <section class="pagina ativa">
+
+            <div class="pagina-topo">
+
+                <div>
+                    <span class="subtitulo">BIBLIOTECA</span>
+
+                    <h1>Informações do livro</h1>
+
+                    <p>
+                        Consulte os detalhes e a disponibilidade da obra.
+                    </p>
+                </div>
+
+            </div>  
+
+            <article class="livro-card">
+
+                <div class="capa-container">
+
+                    <img
+                        src="./images.jpg"
+                        alt="Capa do livro Noite na Taverna"
+                        id="foto-livro"
+                    >
+
+                    <span class="status disponivel">
+                        <i class="fa-solid fa-circle"></i>
+                        Disponível
+                    </span>
+
+                </div>
+
+                <div class="livro-conteudo">
+
+                    <div class="livro-titulo">
+
+                        <span class="categoria">
+                            PROSA GÓTICA
+                        </span>
+
+                        <h2>
+                            Noite na Taverna
+                        </h2>
+
+                        <p class="autor">
+                            por <strong>Álvares de Azevedo</strong>
+                        </p>
+
+                    </div>
+
+                    <div class="detalhes-grid">
+
+                        <div class="detalhe">
+
+                            <i class="fa-solid fa-calendar"></i>
+
+                            <div>
+                                <span>Ano de publicação</span>
+                                <strong>1855</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="detalhe">
+
+                            <i class="fa-solid fa-language"></i>
+
+                            <div>
+                                <span>Idioma</span>
+                                <strong>Português</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="detalhe">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                            <div>
+                                <span>Páginas</span>
+                                <strong>120</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="detalhe">
+
+                            <i class="fa-solid fa-barcode"></i>
+
+                            <div>
+                                <span>ISBN</span>
+                                <strong>978-65-88001-55-4</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="identificacao">
+
+                        <div>
+                            <span>Código do livro</span>
+                            <strong>LIV-001</strong>
+                        </div>
+
+                        <div>
+                            <span>Localização</span>
+                            <strong>Estante A-03 · Prateleira 02</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <section class="info-card">
+
+                <div class="card-titulo">
+
+                    <i class="fa-solid fa-align-left"></i>
+
+                    <div>
+                        <span>DESCRIÇÃO</span>
+                        <h2>Sobre o livro</h2>
+                    </div>
+
+                </div>
+
+                <p class="sinopse">
+                    Noite na Taverna é uma obra de Álvares de Azevedo
+                    composta por narrativas marcadas pelo romantismo
+                    ultrarromântico, pelo mistério e por elementos
+                    sombrios. A obra apresenta histórias contadas por
+                    personagens reunidos em uma taverna, explorando
+                    temas como amor, morte, violência e mistério.
+                </p>
+
+            </section>
+
+            <section class="info-card biblioteca-card">
+
+                <div class="card-titulo">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                    <div>
+                        <span>ACERVO</span>
+                        <h2>Informações da biblioteca</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="biblioteca-grid">
+
+                    <div class="biblioteca-item">
+                        <span>Status</span>
+
+                        <strong class="texto-disponivel">
+                            <i class="fa-solid fa-circle"></i>
+                            Disponível para empréstimo
+                        </strong>
+                    </div>
+
+
+                    <div class="biblioteca-item">
+                        <span>Localização</span>
+
+                        <strong>
+                            Estante A-03
+                        </strong>
+                    </div>
+
+
+                    <div class="biblioteca-item">
+                        <span>Prateleira</span>
+
+                        <strong>
+                            02
+                        </strong>
+                    </div>
+
+
+                    <div class="biblioteca-item">
+                        <span>Código</span>
+
+                        <strong>
+                            LIV-001
+                        </strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
