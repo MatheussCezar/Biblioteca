@@ -192,6 +192,10 @@ header p {
     width: 70px;
 }
 
+.card-aluno-imagem {
+    border-radius: 10px;
+}
+
 .card-aluno:hover {
     transform: translateY(-4px);
     cursor: pointer;

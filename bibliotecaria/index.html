@@ -54,19 +54,19 @@
 
             <div class="cards">
 
-                <div class="info-card">
+                <div class="info-card" onclick="mostrarPagina('acervo', this)">
                     <h3>Livros</h3>
-                    <p>67.6767</p>
+                    <p>8</p>
                 </div>
 
-                <div class="info-card">
-                    <h3>Empréstimos</h3>
-                    <p>6767</p>
+                <div class="info-card" onclick="mostrarPagina('emprestimos', this)">
+                    <h3>Empréstimos Ativos</h3>
+                    <p>1</p>
                 </div>
 
-                <div class="info-card">
+                <div class="info-card" onclick="mostrarPagina('usuarios', this)">
                     <h3>Usuários</h3>
-                    <p>6767</p>
+                    <p>1</p>
                 </div>
 
             </div>
@@ -105,14 +105,16 @@
         <section id="emprestimos" class="pagina">
 
             <header>
-                <h1>Empréstimos</h1>
+                <h1>Empréstimos Ativos</h1>
                 <p>Gerencie os empréstimos da biblioteca</p>
             </header>
 
-            <div class="card">
-                <h2>Lista de Empréstimos</h2>
+            <div class="card" class="card-emprestimo">
+                <h2>Usuário: Bruno Santos Simião</h2>
                 <br>
-                <p>Nenhum empréstimo cadastrado.</p>
+                <p>ISBN: 9786588001554</p>
+                <p>Data devolução: 18/08</p>
+                <p>Status: Ativo</p>
             </div>
 
         </section>
@@ -188,23 +190,7 @@
             </header>
 
             <div class="card-aluno" href="info-aluno.html" onclick="abrirPaginaAluno()">
-                <img src="LogoSemfundo.png" alt="">
-                <div>
-                    <h2>Bruno Santos Simião</h2>
-                    <p>3N</p>
-                </div>
-
-            </div>
-            <div class="card-aluno">
-                <img src="LogoSemfundo.png" alt="" onclick="abrirPaginaAluno()">
-                <div>
-                    <h2>Bruno Santos Simião</h2>
-                    <p>3N</p>
-                </div>
-
-            </div>
-            <div class="card-aluno">
-                <img src="LogoSemfundo.png" alt="" onclick="abrirPaginaAluno()">
+                <img src="../aluno/brunao.jpeg" alt="" class="card-aluno-imagem">
                 <div>
                     <h2>Bruno Santos Simião</h2>
                     <p>3N</p>

@@ -7,8 +7,9 @@
 }
 
 #foto-perfil {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
 }
 
 #abrir-modal-emprestimo {
@@ -85,6 +86,10 @@
 hr {
     margin-top: 20px;
     border: 2px solid var(--cor-secundaria);
+}
+
+#card-dados-aluno-div {
+    margin-left: 12px;
 }
 
 .card-historico-emprestimo {

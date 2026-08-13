@@ -28,8 +28,8 @@
         <section id="dados-do-aluno" class="pagina ativa">
 
             <header id="card-dados-aluno">
-                <img src="LogoPL.jpeg.png" alt="" id="foto-perfil">
-                <div>
+                <img src="../aluno/brunao.jpeg" alt="" id="foto-perfil">
+                <div id="card-dados-aluno-div">
                     <h1 id="nome-aluno-pagina-usuarios">Bruno Santos Simião</h1>
                     <p id="turma-aluno-pagina-usuarios">3N</p>
                     <button id="abrir-modal-emprestimo" onclick="mostrarModalEmprestimo()">Realizar Emprestimo</button>
@@ -41,7 +41,7 @@
                     <h2>Email:</h2><h2 id="email-aluno">brunao1234@escola.pr.gov.br</h2>
                 </div>
                 <div class="organizar-dados-aluno">
-                    <h2>CGM:</h2><h2 id="cgm-aluno">908671724</h2>
+                    <h2>CGM:</h2><h2 id="cgm-aluno">1017094520</h2>
                 </div>
             </div>
 
@@ -56,19 +56,19 @@
             <main>
                 <div class="card-historico-emprestimo info-card">
                     <div>
-                        <h2>ISBN: </h2> <h2>8276573892018</h2>
+                        <h2>ISBN: </h2> <h2>9786588001554</h2>
                     </div>
                     <div>
-                        <h2>Data Emprestimo:</h2><h2>14/06</h2>
+                        <h2>Data Emprestimo:</h2><h2>11/08</h2>
                     </div>
                     <div>
-                        <h2>Data Devolução:</h2><h2>21/06</h2>
+                        <h2>Data Devolução:</h2><h2>18/08</h2>
                     </div>
                     <div>
-                        <h2>Status:</h2><h2>Ativo</h2>
+                        <h2>Status:</h2><h2 class="card-historico-emprestimo-status">Ativo</h2>
                     </div>
 
-                    <button class="dar-baixa">DAR BAIXA</button>
+                    <button class="dar-baixa" onclick="darBaixa(this)">DAR BAIXA</button>
                 </div>
 
                 <div class="card-historico-emprestimo info-card">
@@ -130,6 +130,12 @@
 
         function esconderModalEmprestimo() {
             document.getElementById("modal-emprestimo").close();
+        }
+
+        function darBaixa(target) {
+            const status = target.parentElement.querySelector(".card-historico-emprestimo-status");
+            status.innerHTML = "Devolvido";
+            target.parentElement.removeChild(target);
         }
 
     </script>
